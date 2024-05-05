@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Gæt-et-Dyr Spil</title>
+</head>
+<body>
+    <h1>Gæt-et-Dyr Spil</h1>
+    <button id="startGame">Start Spillet</button>
+    <div id="gameLog"></div>
+
+    <script src="spil.js"></script>
+    <script>
+        document.getElementById('startGame').addEventListener('click', function() {
+            traverseTree(root); // Antager at 'root' er defineret i din 'spil.js' fil
+        });
+    </script>
+</body>
+</html>
